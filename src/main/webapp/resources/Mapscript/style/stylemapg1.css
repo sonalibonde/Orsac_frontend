@@ -1,0 +1,266 @@
+
+/**
+ * CSS Reset
+ * From Blueprint reset.css
+ * http://blueprintcss.googlecode.com
+ */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+#mapdiv{position: fixed; width: 97%; height:87%;
+     }
+#mapbody{position: fixed; width: 97%; height: 94.7%;
+/*box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), 
+    -12px 0 8px -4px rgba(31, 73, 125, 0.8); 
+-moz-box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8),
+    -12px 0 8px -4px rgba(31, 73, 125, 0.8); 
+-webkit-box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), 
+    -12px 0 8px -4px rgba(31, 73, 125, 0.8); 
+-o-box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8),
+    -12px 0 8px -4px rgba(31, 73, 125, 0.8);*/
+border-radius: 10px;
+box-shadow: 0 3px 25px rgba(31, 73, 125, 1);
+}
+
+#tools{width: 100%; height: 5%; border-bottom:#022A95 thin solid; 
+       border-radius: 10px; background-color: #98B2FA;}
+#controls{}
+#livetable{}
+#historytable{}
+#measure{
+            font-weight: bold;
+            position: fixed;
+            bottom: 0;
+            right: 0;}
+.textbox{width: 130px;}
+.bttn{width: 50px;}
+   .tiplabel{font-weight: bold;}
+    .tiptext{font-weight: bold;}
+    .tiphead{ font-weight: bolder; color: #222;  font-size: 8pt;}
+    .popup{height:50px; width:300px; font-weight: bold;}
+    .popopimage{background-image: url(close.gif); width: 22px;}
+    .popupbox{padding-left:97%; width: 22px; backface-visibility: hidden; background-color: #EEE;}
+    .popupback{background: -webkit-linear-gradient(left, rgba(255,222,173,0.1), rgba(255,222,173,0.7)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(255,222,173,0.1), rgba(255,222,173,0.7)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(255,222,173,0.1), rgba(255,222,173,0.7)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(255,222,173,0.1), rgba(255,222,173,0.7)); /* Standard syntax (must be last) */    font-size: 8pt;
+    font-size: 7pt;
+    border: #222 solid thin;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+    //font-family: "Copperplate Gothic Bold", Times, serif;
+    }
+    .button1Display {
+           margin-left: 60px;
+           margin-top: 10px;
+           width:  36px;
+           height: 19px;
+           background-image: url("../images/user_male.png");
+         }
+        
+         /* olControlPanel is a mysterious css class of elements which seem to catch button click events */
+         .olControlPanel div {
+           margin-left: 60px;
+           margin-top: 10px;
+           width:  36px;
+           height: 19px;
+           border: 1px solid #92C1E9;
+         }
+        
+         #map {
+           border: 1px solid #222;
+           width: 300px;
+           height: 300px;
+         }
+    
+   .checkbox {
+	display: inline-block;
+	cursor: pointer;
+	font-size: 13px; margin-right:10px; line-height:10px;
+}
+input[type=checkbox] {
+ //display:none;	
+}
+.checkbox:before {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	vertical-align:middle;
+	background-color: #0088cc;
+	color: #f3f3f3;
+	text-align: center;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);	
+	border-radius: 3px;
+}
+input[type=checkbox]:checked + .checkbox:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 15px;
+}
+      
+         
+         
+/**
+ * Basic Typography
+ */
+body {
+    font-family: "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    //color: #222;
+    //background: #fff;
+    margin: 1.5em 1em 1.5em 1em;
+}
+pre, code {
+    margin: 1.5em 0;
+    white-space: pre;
+}
+pre, code {
+    font: 1em 'andale mono', 'lucida console', monospace;
+    line-height:1.5;
+}
+a[href] {
+    color: #436976;
+    background-color: transparent;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #003a6b;
+    background-color: transparent;
+    font: 100% 'Lucida Grande', Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-top: 0.5em;
+}
+h1 {
+    font-size: 130%;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #fcb100;
+}
+h2 {
+    font-size: 120%;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #aaa;
+}
+h3 {
+    font-size: 110%;
+    margin-bottom: 0.5em;
+    text-decoration: underline;
+}
+h4 {
+    font-size: 100%;
+    font-weight: bold;
+}
+h5 {
+    font-size: 100%;
+    font-weight: bold;
+}
+h6 {
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.fontstyle{
+    
+    color: #ffffff;
+    font-weight: 600; 
+    
+}
+
+.olControlAttribution {
+    bottom: 5px;
+}
+
+/**
+ * Map Examples Specific
+ */
+.smallmap {
+    width: 512px;
+    height: 256px;
+    border: 1px solid #ccc;
+}
+#tags {
+    display: none;
+}
+
+#docs p {
+    margin-bottom: 0.5em;
+}
+/* mobile specific */
+@media only screen and (max-width: 600px) {
+    body {
+        height           : 100%;
+        margin           : 0;
+        padding          : 0;
+        width            : 100%;
+    }
+    #map {
+        background : #7391ad;
+        width      : 100%;
+    }
+    #map {
+        border : 0;
+        height : 250px;
+    }
+    #title {
+        font-size   : 1.3em;
+        line-height : 2em;
+        text-indent : 1em;
+        margin      : 0;
+        padding     : 0;
+    }
+    #docs {
+        bottom     : 0;
+        padding    : 1em;
+    }
+    #shortdesc {
+        color      : #aaa;
+        font-size  : 0.8em;
+        padding    : 1em;
+        text-align : right;
+    }
+    #tags {
+        display : none;
+    }
+}
+@media only screen and (orientation: landscape) and (max-width: 600px) {
+    #shortdesc {
+       float: right;
+       width: 25%;
+    }
+    #map {
+        width: 70%;
+    }
+    #docs {
+        font-size: 12px;
+    }
+}
+body {
+    -webkit-text-size-adjust: none;
+}
+.popupimg
+{
+    position:absolute;
+    top:3%;
+    left:3%;
+    width:90%;
+    height:88%;
+    border: #92C1E9 solid thick; 
+    font-family:verdana;
+    font-size:13px;
+    background-color:rgb(240,240,240);
+}
+
+.cancel
+{
+    display:relative;
+    cursor:pointer;
+    margin:0;
+    float:right;
+    height:13px;
+    width:18px;
+    padding:0 0 5px 0;
+    background-image: url(close.gif);
+    text-align:center;
+    font-weight:bold;
+    font-size:11px;
+    color:white;
+    border-radius:3px;
+    z-index:100000000000000000;
+}

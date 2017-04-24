@@ -1,0 +1,165 @@
+@CHARSET "UTF-8";
+
+ @import url('<c:url value="resources/assets/font_family/Caviar_Dreams_Bold.ttf"/>');
+
+
+@font-face
+{
+    font-family: "Caviar Dreams";
+    src: url('Caviar_Dreams_Bold.ttf'); /* IE9 */
+}
+
+#container1, #sliders1 {
+	min-width: 310px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+#gridheader
+{
+background: #003333;
+}
+#container1 {
+	height: 400px;
+}
+.small
+{
+	 font-family: "Caviar Dreams";
+}
+.a
+{
+	 font-family: "Caviar Dreams";
+}
+h1,h5,h4
+{
+	 font-family: "Caviar Dreams";
+}
+font
+{
+	 font-family: "Caviar Dreams";
+}
+
+#navbar
+{
+/* 	background: -moz-linear-gradient(top, rgba(143,2,34,1) 62%, rgba(109,0,25,1) 100%); */
+/* background: rgb(96,108,136); */
+}
+
+.menu-icon
+{
+	color: black;
+}
+#sidebar
+{
+	background: -moz-linear-gradient(20deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%);
+	background-color:#EEEEEE;
+
+}
+.nav
+{
+	font-family:Caviar Dreams;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus
+{
+/*  background-color: black;  */
+ background: -moz-linear-gradient(45deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); 
+}
+
+.nav-list > li .submenu > li > a:focus {
+    
+    background-color: red;
+}
+
+
+ .nav-list > li .submenu > li > a  
+ {
+ background-color:#282424; 
+ } 
+
+	.cd {
+/*   		display:none; */
+			width:450px;
+			position:relative;
+		    top:120px;
+ 		 	left: 330px; 
+/* 			z-index:500px;  */
+			position: fixed;
+			padding: 1px;
+			background-color:white;
+		}
+		
+		
+		
+		.clearable{
+/*   background: #fff url('<c:url value='/resources/images/backgro.jpg'/>') no-repeat right -10px center; */
+  background: #fff  no-repeat right -10px center;
+  border: 1px solid #999;
+  padding: 3px 18px 3px 4px; /* Use the same right padding (18) in jQ! */
+  border-radius: 3px;
+  transition: background 0.4s;
+}
+.clearable.x  { background-position: right 5px center; }
+.clearable.onX{ cursor: pointer; }
+.clearable::-ms-clear {display: none; width:0; height:0;}
+	
+
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+/* 	padding: 10px 40px; */
+    padding: 10px 40px;
+  	margin: 0px 10px 10px 0px;
+/*   	float: left; */
+	border-radius: 10px;
+/* font-family: 'Pacifico', cursive;  */
+font-family: 'Pacifico'; 
+
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;	
+	
+/* 	text-align: center; */
+}
+
+.blue
+{	
+
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+		

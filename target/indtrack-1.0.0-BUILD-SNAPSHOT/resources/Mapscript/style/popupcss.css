@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 18, 2015, 6:32:23 PM
+    Author     : studio3
+*/
+
+    .tiplabel{font-weight: bold;}
+    .tiptext{font-weight: bold;}
+    .tiphead{ font-weight: bolder; color: #222; }
+    /*.popup{height:50px; width:300px; font-weight: bold;}
+    .popopimage{background-image: url(close.gif); width: 22px;}*/
+    /*.popupbox{padding-left:97%; width: 22px; backface-visibility: hidden; background-color: #EEE;}*/
+    .popupback{
+    top:-20px;
+    right:0;
+    height:100%;
+    width:100%;
+    background: -webkit-linear-gradient(left, rgba(255,222,173,0.1), rgba(255,222,173,0.7)); 
+    background: -o-linear-gradient(right, rgba(255,222,173,0.1), rgba(255,222,173,0.7)); 
+    background: -moz-linear-gradient(right, rgba(255,222,173,0.1), rgba(255,222,173,0.7)); 
+    background: linear-gradient(to right, rgba(255,222,173,0.1), rgba(255,222,173,0.7)); 
+    /*font-size: 7pt;*/
+    /*border: #222 solid thin;*/
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+/*     font-family: "Copperplate Gothic Bold", Times, serif; */
+    }
+    

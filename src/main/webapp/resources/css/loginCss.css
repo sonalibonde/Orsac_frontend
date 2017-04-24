@@ -1,0 +1,40 @@
+body{
+/* background-color: #D6D1E2;  */
+/*  background: url('http://www.trakm8.com/wp-content/uploads/2014/06/trakm8slidernew.jpg') no-repeat center center fixed;   */
+  background:url('<c:url value="/resources/images/loginBackground.jpg"/>') no-repeat center center fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  
+  }
+  #footer {
+ 
+    position: fixed;
+ 
+    height: 30px;
+ 
+    bottom: 0;
+ 
+    width: 100%;
+ 
+ }
+ 
+ 
+ .authenty.signin-main {
+    background-color: transparent;
+}
+.authenty
+{
+background-color: transparent;
+}
+
+
+.text,#form_1 span.un{display:inline-block; }
+
+
+.buttoncolor
+{
+background-color: #52417F;
+}
